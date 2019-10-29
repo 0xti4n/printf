@@ -3,8 +3,6 @@
 /**
 * new_fun - struct function selects the case
 * @format: brings the array first position
-* @list: brings the arguments to evaluate
-*
 * Return: integer value.
 */
 
