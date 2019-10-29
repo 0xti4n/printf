@@ -29,7 +29,7 @@ int _printf(const char *format, ...)
 					len++;
 			}
 
-			if (format[i] == 'c')
+			if (format[i] == 'c' || format[i] == 's')
 			{
 				len = len + new_fun(&format[i])(list);
 			}
