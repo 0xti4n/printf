@@ -2,11 +2,15 @@
 /**
  * new_fun - struct function selects the case
  * @format: brings the array first position
- * @list: brings the arguments to evaluate operation
- * Return: integer value.
+ * @list: brings the arguments to evaluate
  *
- * Description: the function evaluates the parameters that comes from
- * main function to uses the structur for select the correct case of
- * format specifiers.
+ * Return: integer value.
  */
-
+int (*new_fun(const char *format))(va_list list)
+{
+	my_struct array[] = {
+		{"c", _printf_char},
+		{"s", _printf_str},
+		{NULL, NULL}
+	};
+}
