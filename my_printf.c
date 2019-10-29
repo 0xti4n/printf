@@ -17,12 +17,17 @@ int _printf(const char *format, ...)
 	{
 		return (-1);
 	}
-	while(format[i] == '\0')
+	while (format[i] != '\0')
 	{
-		if(format[i] == '%')
+		if (format[i] == '%')
 		{
 		i++;
-		if(format[i] == '%')
+		if (format[i] == '%')
+		{
+			_putchar(format[i])
+				len++;
+		}
+
 		}
 	}
 }
