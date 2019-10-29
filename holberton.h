@@ -9,7 +9,7 @@ typedef struct cases
 {
 	char *c;
 	int (*f)(va_list);
-}my_struct;
+} my_struct;
 
 int _putchar(char c);
 int _printf(const char *format, ...);
