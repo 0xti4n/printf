@@ -21,12 +21,16 @@ int _printf(const char *format, ...)
 	{
 		if (format[i] == '%')
 		{
-		i++;
-		if (format[i] == '%')
-		{
-			_putchar(format[i])
+			i++;
+			if (format[i] == '%')
+			{
+				_putchar(format[i])
 				len++;
-		}
+			}
+				if (format[i] == 'c')
+			{
+				len = len + new_fun(format[i])(list);
+			}
 
 		}
 	}
