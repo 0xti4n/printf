@@ -5,6 +5,12 @@
 #include <stdlib.h>
 #include <stdarg.h>
 
+/**
+* struct cases - Struct cases
+* @c: The operator
+* @f: The function associated
+*/
+
 typedef struct cases
 {
 	char *c;
