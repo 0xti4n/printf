@@ -9,24 +9,24 @@ int _printf(const char *format, ...)
 {
 	va_list list;
 	int i, len = 0;
-	
+
 	va_start(list, format);
-	
+
 	if (format == NULL)
 		return (-1);
-	
+
 	while (format[i] != '\0')
 	{
 		if (format[i] == '%')
 		{
 			i++;
-			
+
 			if (format[i] == '%')
 			{
 				_putchar(format[i])
 					len++;
 			}
-			
+
 			if (format[i] == 'c')
 			{
 				len = len + new_fun(format[i])(list);
