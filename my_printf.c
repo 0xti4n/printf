@@ -28,9 +28,15 @@ int _printf(const char *format, ...)
 				len++;
 			}
 				if (format[i] == 'c')
-			{
+				{
 				len = len + new_fun(format[i])(list);
-			}
+				}
+				else if (format[i] != '%')
+				{
+					_putchar('%');
+						_putchar(format[i]);
+						len + 2;
+				}
 
 		}
 	}
