@@ -24,10 +24,9 @@ int _printf_str(va_list list)
 {
 	char *st;
 	int i = 0, len = 0;
+
 	st = va_arg(list, char *);
 
-
-	
 	if (st == NULL)
 	{
 		st = "(null)";
