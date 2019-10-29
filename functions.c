@@ -23,11 +23,11 @@ int _printf_char(va_list list)
 int _printf_str(va_list list)
 {
 	char *st;
-
+	int i = 0, len = 0;
 	st = va_arg(list, char *);
 
-	int i = 0, len = 0;
 
+	
 	if (st == NULL)
 	{
 		st = "(null)";
