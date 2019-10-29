@@ -15,27 +15,29 @@ int _printf_char(va_list list)
 }
 
 /**
- * _printf_str - Used in s case
- * @list: Brings arguments
- * Return: integer value
- */
+* _printf_str - Used in s case
+* @list: Brings arguments
+* Return: integer value
+*/
 
-int _prinf_str(va_list list)
+int _printf_str(va_list list)
 {
 	char *st;
 
-	st = va_arg(list, char*)
+	st = va_arg(list, char *);
+
 	int i = 0, len = 0;
 
 	if (st == NULL)
 	{
-	st = "(null)";
+		st = "(null)";
 	}
+
 	while (st[i] != '\0')
 	{
-	_putchar(st[i]);
-	i++;
-	len++;
+		_putchar(st[i]);
+		i++;
+		len++;
 	}
 	Return(len);
 }
