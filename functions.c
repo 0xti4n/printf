@@ -39,5 +39,5 @@ int _printf_str(va_list list)
 		i++;
 		len++;
 	}
-	return(len);
+	return (len);
 }
