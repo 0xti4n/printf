@@ -5,7 +5,7 @@
 #include <stdlib.h>
 #include <stdarg.h>
 
-typedef cases
+typedef struct cases
 {
 	char *c;
 	int (*f)(va_list);
