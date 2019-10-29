@@ -1,4 +1,5 @@
 #include "holberton.h"
+#include <stdlib.h>
 
 /**
 * _printf - Function construction that performs the same as printf in C
@@ -31,7 +32,7 @@ int _printf(const char *format, ...)
 
 			if (format[i] == 'c' || format[i] == 's')
 			{
-				len = len + new_fun(&format[i])(list);
+				len = len + (*new_fun(&format[i]))(list);
 			}
 			else if (format[i] != '%')
 			{
