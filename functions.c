@@ -22,5 +22,20 @@ int _printf_char(va_list list)
 
 int _prinf_str(va_list list)
 {
+	char *st;
 
+	st = va_arg(list, char*)
+	int i = 0, len = 0;
+
+	if (st == NULL)
+	{
+	st = "(null)";
+	}
+	while (st[i] != '\0')
+	{
+	_putchar(st[i]);
+	i++;
+	len++;
+	}
+	Return(len);
 }
