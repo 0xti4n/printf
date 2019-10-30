@@ -12,6 +12,8 @@ int (*new_fun(const char *format))(va_list list)
 	my_struct array[] = {
 		{"c", _printf_char},
 		{"s", _printf_str},
+		{"d", _printf_number},
+		{"i", _printf_number},
 		{NULL, NULL}
 	};
 

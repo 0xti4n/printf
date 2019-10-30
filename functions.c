@@ -41,3 +41,46 @@ int _printf_str(va_list list)
 	}
 	return (len);
 }
+
+/**
+* putnum - Convert numbers.
+* @n: The number to evaluate.
+* @base: The base number.
+* @numbers: Numbers to evaluate.
+* Return: The result.
+*/
+
+int putnum(int n, int base, char *numbers)
+{
+	int r = 1;
+
+	if (n >= base)
+		r += putnum(n / base, base, numbers);
+	_putchar(numbers[n % base]);
+	return (r);
+}
+
+/**
+* _printf_number - Function that prints numbers.
+* @list: Brings arguments.
+* Return: The len of the numbers.
+*/
+
+int _printf_number(va_list list)
+{
+	int n = va_arg(list, int);
+	int len = 0, num;
+
+	if (n < 0)
+	{
+		_putchar('-');
+		len++;
+		num = -n;
+	}
+	else
+	{
+		num = n;
+	}
+	len += putnum(num, 10, "0123456789");
+	return (len);
+}
