@@ -14,7 +14,8 @@ The program is completly portable, it runs in any terminal without installation,
 ## Usage
 
 ```Print 
-```![Printf](https://images.app.goo.gl/d2NdiP68v4D8vmR88)
+```
+![enter image description here](https://images.app.goo.gl/d2NdiP68v4D8vmR88)
 
 ## Contributing
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
