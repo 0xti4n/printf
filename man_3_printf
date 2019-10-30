@@ -1,0 +1,18 @@
+.TH man 0 "29 Oct 2019" "0.32" "our _printf man page"
+.SH NAME
+.B our printf holberton function
+- We try to build our own printf function.
+.SH SYNOPSIS
+our _printf function
+In our _printf function, we use several files to evaluate the different cases or proofs that could be presented at the time of printing what was in format.
+.SH DESCRIPTION
+we use the following files to evaluate all cases and apply the concepts acquired during previous C language projects: 
+- holberton.h (prototypes and structure)
+- my_printf.c (base code of our printf function)
+- my_new_fun.c (struct function selects the case)
+- funtions.c (list of functions to meet betty requirements)
+_putchar.c (Print char by char)
+.SH ISSUES
+We have a issue in check #13
+.SH AUTHORS
+Samuel Rojas Coley, Cristian Gómez Bernal and Juan David Restrepo Z
