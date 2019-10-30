@@ -1,26 +1,34 @@
+
 # _printf
 
-This is a fuction to emulate what original printf does. 
-This is the firsth team proyect. The objetive was to use the knowledge adquired during the firsth trimester at holberton School Medellin.
+Build and code a program to emulated the "printf" function in C.
 
-## Installation
 
-The program is completly portable, it runs in any terminal without installation, just execute.
 
-```bash
-./_printf
-```
+
 
 ## Usage
+To created this program was necesary to evaluate the cases proposed.
 
-```Print 
+ - 's'
+ - 'c'
+ - '%'
+ - 'd'
+ - 'i'
+
+Each of this characters become in the format especifiers except the '%' wich initiates a specifier.
+The function is eable to print whole strings and combinations with variables called from specifiers.
+
+
+``` 
 ```
-![enter image description here](https://images.app.goo.gl/d2NdiP68v4D8vmR88)
 
 ## Contributing
+Coauthors are: Cristian Gomez bernal, Juan David Restrepo Z, Samuel Rojas Coley.
+
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
 
 Please make sure to update tests as appropriate.
 
 ## License
-[MIT](https://choosealicense.com/licenses/mit/)
+[HOLBERTON]([https://support.holbertonschool.com/hc/en-us/requests/new](https://support.holbertonschool.com/hc/en-us/requests/new))
