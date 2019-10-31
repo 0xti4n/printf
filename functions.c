@@ -50,7 +50,7 @@ int _printf_str(va_list list)
 * Return: The result.
 */
 
-int putnum(int n, int base, char *numbers)
+int putnum(unsigned int n, unsigned int base, char *numbers)
 {
 	int r = 1;
 
@@ -69,7 +69,8 @@ int putnum(int n, int base, char *numbers)
 int _printf_number(va_list list)
 {
 	int n = va_arg(list, int);
-	int len = 0, num;
+	int len = 0;
+	unsigned int num;
 
 	if (n < 0)
 	{
