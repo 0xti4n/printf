@@ -1,4 +1,4 @@
-.TH man 0 "29 Oct 2019" "0.32" "our _printf man page"
+.TH man 3 "29 Oct 2019" "0.32" "our _printf man page"
 .SH NAME
 .B our printf holberton function
 - We try to build our own printf function.
